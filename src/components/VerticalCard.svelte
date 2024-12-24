@@ -6,7 +6,7 @@
     
 </script>
                   
-<div class="flex flex-col bg-custom-green-300 m-1 movie aspect-[9/16] rounded-2xl shadow-lg">
+<div class="flex flex-col bg-custom-green-300 m-1 movie rounded-2xl shadow-lg">
     
     <img src="{poster_baseURL+$sharedData[index].poster_path}" alt="{$sharedData[index].title}" class="rounded-2xl rounded-b-none aspect-[2/3] shadow-2xl">
     
