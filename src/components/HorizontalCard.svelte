@@ -2,7 +2,6 @@
     import { sharedData } from "$lib/shared";
     let backdrop_baseURL = "http://image.tmdb.org/t/p/w780";
     let { index } = $props();
-    
 </script>
 
 <div class="flex flex-col bg-custom-green-300 m-1 $sharedData[index] aspect-[4/3] rounded-2xl">

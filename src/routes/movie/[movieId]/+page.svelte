@@ -27,7 +27,7 @@
 
     </a>
 </div>
-
+<!-- Movie Details  -->
 <div class="lg:flex lg:flex-row-reverse h-screen relative">
     
 {#await fetchDetails()}
@@ -41,6 +41,7 @@
     <SideBar />
 
     <Details />
+    
 {/await}
 </div>
 

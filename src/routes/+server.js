@@ -11,15 +11,10 @@ headers: {
 }
 };
 
-
-
-
 export async function GET({ request }) {
 
     const page = request.headers.get('page');
-    console.log('Page:',page);
 
-    console.log('Fetching more movies');
     try {
         const response = await fetch(`https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=${page}`, options);
 
@@ -31,7 +26,7 @@ export async function GET({ request }) {
         let data = await response.json();
         data = data.results;
 
-        console.log("More movies fetched")
+
         return json(data) ;
     } catch (err) {
         console.error('Error fetching more movies:', err);

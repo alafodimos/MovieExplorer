@@ -2,8 +2,7 @@
     import { sharedData } from "$lib/shared";
 
     let poster_baseURL = "http://image.tmdb.org/t/p/w500";
-    let { index } = $props();
-    
+    let { index } = $props();  
 </script>
                   
 <div class="flex flex-col bg-custom-green-300 m-1 movie rounded-2xl shadow-lg">

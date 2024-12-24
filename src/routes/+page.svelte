@@ -29,7 +29,6 @@
   onMount(() => {
   // Add event listener to update the number of columns on resize
   window.addEventListener('resize', getColumns);
-
   // Remove the event listener when the component is destroyed
   return () => {
       window.removeEventListener('resize', getColumns);
@@ -50,7 +49,6 @@
           );
       $pageCounter++;
   }
-
 </script>
 
 <Header />
@@ -58,41 +56,39 @@
 <!-- First two rows -->
 <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] movie-grid">   
   {#each $sharedData as movie, i}
-      {#await getColumns()}
+    {#await getColumns()}
 
-          <SkeletonCard />
+    <SkeletonCard /> 
 
-      {:then columnNumber} 
-          {#if i < 2*columns}
-                
-            <VerticalCard index={i}/>
+    {:then columnNumber} 
+      {#if i < 2*columns}
+            
+      <VerticalCard index={i}/>
 
-          {/if}  
-      {/await}
+      {/if}  
+    {/await}
   {/each}
 </div>
 
 <!-- Rest of the rows -->
 <div class="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] movie-grid">
   {#each $sharedData as movie, i}
-      {#await getColumns() then columnNumber}
-          {#if i >= 2*columns}
+    {#await getColumns() then columnNumber}
+      {#if i >= 2*columns}
 
-              <HorizontalCard index={i} />
-                  
-          {/if}
-      {/await}
+      <HorizontalCard index={i} />
+              
+      {/if}
+    {/await}
   {/each}
 </div>
 
 <!-- Show more button  -->
 <div class="flex flex-auto justify-center place-items-center h-[4vh] bg-gradient-to-t from-custom-green-300 to-custom-green-400 p-10">
   <button class="rounded-3xl bg-custom-green-200 hover:bg-[#36502f] pl-3 pr-3" onclick={moreMovies}>Show More</button>
-
 </div>
 
 <BackToTop />
-
 
 <svelte:head>
     <title>The Movie Explorer</title>

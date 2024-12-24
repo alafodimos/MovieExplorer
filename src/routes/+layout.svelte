@@ -8,6 +8,4 @@
     :global(html) {
       background-color: theme(colors.custom-green-400);
     }
-    
-  
   </style>
