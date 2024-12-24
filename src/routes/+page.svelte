@@ -96,5 +96,5 @@
     <meta name="keywords" content="Now Playing, Movies, Photos, Trailers, Synopsis">
     <meta property="og:title" content="The Movie Explorer">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://movie-explorer-lypdkyd3c-alafodimos-projects.vercel.app/">
+    <meta property="og:url" content="https://movie-explorer-git-main-alafodimos-projects.vercel.app/">
 </svelte:head>

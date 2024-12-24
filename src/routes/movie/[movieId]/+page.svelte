@@ -53,7 +53,7 @@
     <meta property="og:title" content="{movie.title}">
     <meta property="og:type" content="video.movie">
     <meta property="og:image" content="http://image.tmdb.org/t/p/w1280{movie.backdrop_path}">
-    <meta property="og:url" content="https://movie-explorer-lypdkyd3c-alafodimos-projects.vercel.app/movie/{movie.id}">
+    <meta property="og:url" content="https://movie-explorer-git-main-alafodimos-projects.vercel.app/movie/{movie.id}">
 
 </svelte:head>
 
